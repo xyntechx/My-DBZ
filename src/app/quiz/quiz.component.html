@@ -1,1 +1,8 @@
-<p>quiz works!</p>
+<div *ngIf="is_quizpage; else newPage">
+  <p>quiz works!</p>
+  <app-play></app-play>
+  <button (click)="changePage()">
+    <a routerLink="../" routerLinkActive="active">Home</a>
+  </button>
+</div>
+<ng-template #newPage><router-outlet></router-outlet></ng-template>

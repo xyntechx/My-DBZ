@@ -3,13 +3,16 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
-  styleUrls: ['./quiz.component.scss']
+  styleUrls: ['./quiz.component.scss'],
 })
 export class QuizComponent implements OnInit {
+  is_quizpage = true;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  changePage() {
+    this.is_quizpage = false;
   }
 
+  constructor() {}
+
+  ngOnInit(): void {}
 }

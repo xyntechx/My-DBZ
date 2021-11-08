@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My DBZ';
+  is_homepage = true;
+
+  changePage() {
+    this.is_homepage = false;
+  }
 }
