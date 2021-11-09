@@ -1,7 +1,11 @@
-<div *ngIf="is_homepage; else newPage">
-  <h1>Home</h1>
-  <button (click)="changePage()">
-    <a routerLink="/quiz" routerLinkActive="active">Quiz</a>
-  </button>
-</div>
+<!-- if-else block to replace the entire page with the component of the target path -->
+
+<main *ngIf="is_homepage; else newPage">
+  <h1>My DBZ</h1>
+  <p>Discover who you would be in DBZ today!</p>
+  <a (click)="changePage()" routerLink="/quiz" routerLinkActive="active">
+    Let&apos;s Start
+  </a>
+</main>
+
 <ng-template #newPage><router-outlet></router-outlet></ng-template>
