@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #4764e6;
-  --secondary-color: #37aaf7;
-  --light-color: #b6c2fc;
-  --text-color: #1f2937;
+  --primary-color: #c80b21;
+  --secondary-color: #dc7303;
+  --light-color: #e7940a;
+  --text-color: #ffffff;
 }
 
 main {
@@ -25,4 +25,8 @@ a {
   &:hover {
     background: var(--secondary-color);
   }
+}
+
+img {
+  margin: 1rem;
 }
