@@ -1,8 +1,9 @@
-<div *ngIf="is_quizpage; else newPage">
+<!-- if-else block to replace the entire page with the component of the target path -->
+
+<main *ngIf="is_quizpage; else newPage">
   <p>quiz works!</p>
   <app-play></app-play>
-  <button (click)="changePage()">
-    <a routerLink="../" routerLinkActive="active">Home</a>
-  </button>
-</div>
+  <a (click)="changePage()" routerLink="../" routerLinkActive="active">Home</a>
+</main>
+
 <ng-template #newPage><router-outlet></router-outlet></ng-template>
