@@ -2,7 +2,7 @@
 
 <main *ngIf="is_quizpage; else newPage">
   <p>quiz works!</p>
-  <app-play></app-play>
+  <app-play [question]="'how u doin?'"></app-play>
   <a (click)="changePage()" routerLink="../" routerLinkActive="active">Home</a>
 </main>
 
