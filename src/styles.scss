@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #4764e6;
+  --secondary-color: #37aaf7;
+  --light-color: #b6c2fc;
+  --text-color: #1f2937;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 5rem;
+  font-size: 5rem;
+}
+
+p,
+a {
+  margin: 1rem 5rem;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 1rem 2rem;
+    font-size: 3rem;
+  }
+
+  p,
+  a {
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+}
