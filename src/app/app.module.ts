@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { PlayComponent } from './play/play.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { HowToPlayComponent } from './how-to-play/how-to-play.component';
-import { TitleComponent } from './title/title.component';
 import { ResultsComponent } from './results/results.component';
 
 @NgModule({
@@ -15,7 +14,6 @@ import { ResultsComponent } from './results/results.component';
     PlayComponent,
     QuizComponent,
     HowToPlayComponent,
-    TitleComponent,
     ResultsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
