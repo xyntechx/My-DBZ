@@ -61,12 +61,14 @@ h6 {
 }
 
 p,
-sub {
+sub,
+footer {
   margin: 1rem 5rem;
   font-size: 2.5rem;
 }
 
-sub {
+sub,
+footer {
   font-size: 1.5rem;
 }
 
@@ -102,12 +104,14 @@ img {
 
   p,
   a,
-  sub {
+  sub,
+  footer {
     margin: 1rem 2rem;
     font-size: 1.5rem;
   }
 
-  sub {
+  sub,
+  footer {
     font-size: 1rem;
   }
 }
