@@ -1,18 +1,23 @@
 <!-- if-else block to replace the entire page with the component of the target path -->
 
-<main *ngIf="is_quizpage; else newPage">
-  <app-title [title]="quizzes[index][0]"></app-title>
-  <app-play [question]="quizzes[index][1]"></app-play>
-  <p>{{ index }}</p>
+<!-- TODO: If index < 9 continue to show quizzes, else show RESULTS -->
 
-  <button *ngIf="index < 9; else homeButton" (click)="updateIndex()">
-    Next
-  </button>
-  <ng-template #homeButton>
-    <a (click)="changePage()" routerLink="../" routerLinkActive="active">
-      Home
-    </a>
-  </ng-template>
+<main *ngIf="is_quizpage; else newPage">
+  <p class="question">{{ questions[index] }}</p>
+  <app-play
+    [characters]="answers"
+    [index]="index"
+    (newIndex)="updateIndex()"
+  ></app-play>
+
+  <a
+    *ngIf="index >= 9"
+    (click)="changePage()"
+    routerLink="../"
+    routerLinkActive="active"
+  >
+    Home
+  </a>
 </main>
 
 <ng-template #newPage><router-outlet></router-outlet></ng-template>
