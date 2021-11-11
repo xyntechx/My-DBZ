@@ -1,2 +1,13 @@
-<p>i'm the play component in quiz</p>
-<p>Question: {{question}}</p>
+<main *ngIf="index < 10; else results">
+  <button
+    *ngFor="let character of characters | keyvalue"
+    class="option"
+    (click)="updateIndex(); appendAnswer(character.key)"
+  >
+    {{ character.value[index] }}
+  </button>
+</main>
+
+<ng-template #results>
+  <app-results [character]="character"></app-results>
+</ng-template>
