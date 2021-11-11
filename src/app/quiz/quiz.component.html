@@ -1,7 +1,5 @@
 <!-- if-else block to replace the entire page with the component of the target path -->
 
-<!-- TODO: If index < 9 continue to show quizzes, else show RESULTS -->
-
 <main *ngIf="is_quizpage; else newPage">
   <p class="question">{{ questions[index] }}</p>
   <app-play
