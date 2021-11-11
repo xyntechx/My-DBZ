@@ -9,7 +9,6 @@ Through building this project, I aim to learn how to:
 ## 🤖 Technologies
 - Angular
 - SCSS
-- Firebase
 
 ## 🔨 Usage
 ```bash
